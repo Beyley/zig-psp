@@ -42,7 +42,7 @@ pub fn _module_main_thread(argc: c.SceSize, argv: ?*anyopaque) callconv(.C) c_in
         },
         .ErrorUnion => {
             const result = root.main() catch |err| {
-                _ = err;
+                err catch unreachable;
                 //TODO: errors
                 // debug.print("ERROR CAUGHT: ");
                 // debug.print(@errorName(err));

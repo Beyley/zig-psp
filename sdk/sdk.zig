@@ -8,4 +8,6 @@ pub const c = @cImport({
     @cInclude("pspdisplay.h");
     @cInclude("pspge.h");
     @cInclude("pspdebug.h");
+    @cInclude("pspgu.h");
+    @cInclude("pspgum.h");
 });

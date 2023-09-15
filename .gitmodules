@@ -1,0 +1,3 @@
+[submodule "pspsdk"]
+	path = pspsdk
+	url = https://github.com/Beyley/pspsdk/
