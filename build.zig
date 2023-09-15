@@ -21,7 +21,7 @@ pub fn build(b: *std.Build) !void {
     b.getInstallStep().dependOn(&install.step);
 
     var run_step = b.step("run", "run PPSSPP on the EBOOT");
-    var run_ppsspp = b.addSystemCommand(&.{"/home/beyley/ppsspp/build/PPSSPPSDL"});
+    var run_ppsspp = b.addSystemCommand(&.{"PPSSPPSDL"});
     run_ppsspp.addFileArg(pbp);
     pbp.addStepDependencies(&run_ppsspp.step);
     run_step.dependOn(&run_ppsspp.step);
