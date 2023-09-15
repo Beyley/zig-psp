@@ -1,0 +1,11 @@
+zig-cache
+zig-out
+*.o
+*.SFO
+*.elf
+*.PBP
+*.prx
+*.log
+.DS_STORE
+.DS_Store
+*.PSP
